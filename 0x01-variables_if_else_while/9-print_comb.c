@@ -11,11 +11,9 @@ int main(void)
 
 	while (a <= 57)
 	{
-		if (a == 57)
-			putchar(a);
-		else
+		putchar(a);
+		if (!(a == 57))
 		{
-			putchar(a);
 			putchar(44);
 			putchar(32);
 		}
