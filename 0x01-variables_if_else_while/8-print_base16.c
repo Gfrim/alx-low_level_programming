@@ -2,8 +2,8 @@
 
 /**
  * main - Entry Point
- *Description: Hexadecimal
- * Alwats 0 (Success)
+ *
+ * Always 0 (Success)
  */
 int main(void)
 {
