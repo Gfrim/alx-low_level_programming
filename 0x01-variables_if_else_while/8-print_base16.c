@@ -2,7 +2,7 @@
 
 /**
  * main - Entry Point
- *
+ *Description: Hexadecimal
  * Alwats 0 (Success)
  */
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 		putchar(a);
 		a++;
 	}
-	while (b <= 101)
+	while (b <= 102)
 	{
 		putchar(b);
 		b++;
