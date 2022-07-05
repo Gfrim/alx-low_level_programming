@@ -22,7 +22,7 @@ int main(void)
 		else
 			printf(", ");
 	}
-	return (0)
+	return (0);
 }
 	/*
 	long int i, j, k, l;
