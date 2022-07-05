@@ -7,44 +7,36 @@
  */
 void print_times_table(int a)
 {
-		int i, j, k;
+	int num, mult, result;
 
-		if (a >= 0 && a <= 15)
+	if (a <= 15 && a >= 0)
+	{
+		for (num = 0; num <= a; num++)
 		{
-			for (i = 0; i <= a; i++)
+			_putchar('0');
+			for (mult = 1; mult <= a; mult++)
 			{
-				for (j = 0; j <= a; j++)
+				_putchar(',');
+				_putchar(' ');
+				result = num * mult;
+				if (result <= 99)
+					_putchar(' '));
+
+				if (result <= 9)
+					_putchar(' ');
+
+				if (result >= 100)
 				{
-					k = j * i;
-					if (j == 0)
-					{
-						_putchar(k + '0');
-					}
-					else if (k < 10 && j != 0)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(k + '0');
-					}
-					else if (k >= 10 && k < 100)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar(' ');
-						_putchar((k / 10) + '0');
-						_putchar((k % 10) + '0');
-					}
-					else if (k >= 100)
-					{
-						_putchar(',');
-						_putchar(' ');
-						_putchar((k / 100) + '0');
-						_putchar(((k / 10) % 10) + '0');
-						_putchar((k % 10) + '0');
-					}
+					_putchar((result / 100) + '0');
+					_putchar((result / 10) % 10 + '0');
 				}
-				_putchar('\n');
+				else if (result <= 99 && result >= 10)
+				{
+					_putchar((result / 10) + '0');
+				}
+				_putchar((result % 10) + '0');
 			}
-		}}
+			_putchar('\n');
+		}
+	}
+}
