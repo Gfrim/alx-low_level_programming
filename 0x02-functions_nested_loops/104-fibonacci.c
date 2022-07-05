@@ -8,8 +8,10 @@
 int main(void)
 {
 	int i;
-	unsigned long v1 = 0, v2 = 1, v3, h1, h2;
+	unsigned long v1, v2, v3, h1, h2;
 	unsigned long v1H1, v1H2, v2H1, v2H2;
+
+	v1 = 0, v2 = 1;
 	
 	for (i = 0; i < 92; i++)
 	{
