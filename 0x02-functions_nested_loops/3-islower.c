@@ -4,6 +4,9 @@
 /**
  * _islower - checks for lowercase character.
  *
+ * c - Decimal of a character based on ASCII
+ * Return: 0 (Fasle)
+ * Return: 1 (Ture)
  */
 int _islower(int c)
 {
