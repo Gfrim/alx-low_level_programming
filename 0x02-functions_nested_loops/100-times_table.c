@@ -20,7 +20,7 @@ void print_times_table(int a)
 				_putchar(' ');
 				result = num * mult;
 				if (result <= 99)
-					_putchar(' '));
+					_putchar(' ');
 
 				if (result <= 9)
 					_putchar(' ');
