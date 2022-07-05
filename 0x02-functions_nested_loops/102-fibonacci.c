@@ -8,25 +8,18 @@
 
 int main(void)
 {
-	int a = 3;
+	long int i, j, k, l;
 
-	long int b = 1, c = 2;
-	long int d = b + c;
+	j = 1, k = 2;
 
-	printf("%lu, ", b);
-	printf("%lu, ", c);
-
-	while (a <= 50)
+	for (i = 1; i <= 50; ++i)
 	{
-		if (a == 50)
-			printf("%lu \n", d);
+		if (j != 20365011074)
+			printf("%ld, ", j);
 		else
-			printf("%lu, ", d);
-
-		b = c;
-		c = d;
-		d = b + c;
-		a++;
+			printf("%ld\n, ", j);
+		l = j + k;
+		j = k, k = l;
 	}
 	return (0);
 }
