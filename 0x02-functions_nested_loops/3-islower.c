@@ -3,8 +3,8 @@
 
 /**
  * _islower - checks for lowercase character.
+ * c - Decimal of a character based on ASCII.
  *
- * int c - Decimal of a character based on ASCII
  * Return: 1 (True) or 0 (False)
  */
 int _islower(int c)
