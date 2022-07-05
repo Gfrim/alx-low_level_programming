@@ -16,7 +16,7 @@ int main(void)
 	{
 		printf("%lu", l);
 		j = k;
-	       	k = l;
+		k = l;
 		l = j + k;
 
 		if (i == 97)
