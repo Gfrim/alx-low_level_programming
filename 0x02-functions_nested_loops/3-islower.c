@@ -3,7 +3,7 @@
 
 /**
  * _islower - checks for lowercase character.
- * @c - Decimal of a character based on ASCII.
+ * @c: Decimal of a character based on ASCII.
  *
  * Return: 1 (True) or 0 (False)
  */
