@@ -19,13 +19,10 @@ int main(void)
 	while (a <= 50)
 	{
 		if (a == 50)
-		{
 			printf("%lu \n", d);
-		}
 		else
-		{
 			printf("%lu, ", d);
-		}
+
 		b = c;
 		c = d;
 		d = b + c;
