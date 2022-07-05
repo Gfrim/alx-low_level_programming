@@ -4,7 +4,7 @@
 /**
  * _abs - prints absolute value of a number
  * @c: Number
- * Retunr: ABSOLUTE VALUE
+ * Return: ABSOLUTE VALUE
  */
 int _abs(int c)
 {
