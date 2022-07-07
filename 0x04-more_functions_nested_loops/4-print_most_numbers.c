@@ -9,17 +9,18 @@
  */
 void print_most_numbers(void)
 {
-	int i = 48, j = 0;
+	int i = 48;
+	int j = 0;
 
 	for (j; j <= 9; j++)
 	{
-		if (j == 2 || j == 4)
+		if ((j == 2) || (j == 4))
 			continue;
 		else
 		{
 			_putchar(i);
-			i++;
 		}
+		i++;
 	}
 	_putchar('\n');
 }
