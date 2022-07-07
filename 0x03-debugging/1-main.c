@@ -2,7 +2,7 @@
 
 /**
  * main - cause an infinite loop
- * Return: 0
+ * Return: 0 (Success)
  */
 
 int main(void)
@@ -20,7 +20,7 @@ int main(void)
 	 * }
 	 */
 
-	printf("Infinte loop avoided! \\o/\n");
-
+	printf("Infinite loop avoided! \\o/\n");
+	
 	return (0);
 }
