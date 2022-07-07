@@ -11,7 +11,7 @@ void print_most_numbers(void)
 {
 	int i = 48, j = 0;
 
-	while (i <= 57)
+	for (j; j <= 9; j++)
 	{
 		if (j == 2 || j == 4)
 			continue;
@@ -19,7 +19,6 @@ void print_most_numbers(void)
 		{
 			_putchar(i);
 			i++;
-			j++;
 		}
 	}
 	_putchar('\n');
