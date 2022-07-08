@@ -3,27 +3,28 @@
 /**
  * main - Entry Point
  *
- * Return: 0 (Success)
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int i;
+	int x = 1;
 
-	i = 1;
-	while (i <= 100)
+	while (x < 101)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
-			printf("FizzBuzz ");
-		else if (i % 3 == 0)
-			printf("Fizz ");
-		else if (i % 5 == 0)
-			printf("Buzz ");
+		if (x % 3 == 0 && x % 5 == 0)
+			printf("%s", "FizzBuzz");
+		else if (x % 3 == 0)
+			printf("%s", "Fizz");
+		else if (x % 5 == 0)
+			printf("%s", "Buzz");
 		else
-		{
-			printf("%d ", i);
-		}
-		i++;
+			printf("%d", x);
+
+		if (x != 100)
+			printf("%c", ' ');
+		x++;
 	}
-	putchar('\n');
+	printf("%c", '\n');
 	return (0);
 }
