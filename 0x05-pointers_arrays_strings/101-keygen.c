@@ -20,12 +20,12 @@ int main(void)
 	{
 		psswd[i] = rand() % 78;
 		sum += (psswd[i] + '0');
-		putchar(pass[i] + '0');
+		putchar(psswd[i] + '0');
 		if ((2772 - sum) - '0' < 78)
 		{
-			n = 2772 - sum - '0';
-			sum += n;
-			putchar(n + '0');
+			j = 2772 - sum - '0';
+			sum += j;
+			putchar(j + '0');
 			break;
 		}
 	}
