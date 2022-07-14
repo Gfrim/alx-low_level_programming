@@ -18,7 +18,7 @@ char *cap_string(char *s)
 		if (len == 0 && s[len] >= 97 && s[len] <= 122)
 			s[len] -= 32;
 
-		for (j = 0; j < 13; j++)
+		for (i = 0; i < 13; i++)
 			if (s[len] == sep[j])
 				if (s[len + 1] >= 97 && s[len + 1] <= 122)
 					s[len + 1] -= 32;
