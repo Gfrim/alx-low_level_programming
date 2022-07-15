@@ -29,7 +29,7 @@ void print_buffer(char *buffer, int size)
 			if (i < j)
 				printf("%02x", *(buffer + o + i));
 			else
-				printf(" ");
+				printf("  ");
 			if (i % 2)
 				printf(" ");
 		}
