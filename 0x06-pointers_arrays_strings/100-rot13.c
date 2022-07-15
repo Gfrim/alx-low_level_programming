@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * leet - encodes a string using rot13
+ * *rot13 - encodes a string using rot13
  * @s: string to be passed
  *
  * Return: char
  */
 
-char *leet(char *s)
+char *rot13(char *s)
 {
 	int a, b;
 
