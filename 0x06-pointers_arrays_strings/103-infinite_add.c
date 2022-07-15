@@ -3,7 +3,6 @@
 /**
  * reverse_string - reverse an array
  * @n: parameter
- *
  * Return: void
  */
 
@@ -30,7 +29,6 @@ void reverse_string(char *n)
  * @n2: Second number
  * @r: result holder
  * @size_r: result holder size
- *
  * Return: char
  */
 
@@ -46,10 +44,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 
 	i--;
 	j--;
-
 	if (j > size_r || i > size_r)
 		return (0);
-
 	while (j >= 0 || i >= 0 || overflow >= 1)
 	{
 		if (i < 0)
@@ -65,7 +61,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			overflow = 1;
 		else
 			overflow = 0;
-		if (digits>= (size_r - 1))
+		if (digits >= (size_r - 1))
 			return (0);
 
 		*(r + digits) = (temp % 10) + '0';
