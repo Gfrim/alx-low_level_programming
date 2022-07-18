@@ -1,2 +1,2 @@
 int _putchar(char);
-char *_memset(char *, char *, unsigned int );
+char *_memset(char *, char, unsigned int );
