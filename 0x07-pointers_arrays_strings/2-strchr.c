@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 {
 	int i;
 
-	while (s[i] != c)
+	while (s[i] != c && s[i] != '\0')
 		i++;
 
 	if (s[i] == c)
