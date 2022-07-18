@@ -6,3 +6,4 @@ unsigned int _strspn(char *, char *);
 char *_strpbrk(char *s, char *accept);
 void print_chessboard(char (*a)[8]);
 void print_diagrams(int *, int);
+void set_string(char **s, char *to);
