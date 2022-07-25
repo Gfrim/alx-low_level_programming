@@ -14,12 +14,18 @@ char *_strdup(char *str)
 	char *new;
 	unsigned int i;
 
-	new = malloc(sizeof(*new) * sizeof(*str));
-	for (i = 0; i < sizeof(*str); i++)
-		new[i] = str[i];
-	
-	if (str == NULL || new == NULL)
+	if (str == NULL)
 		return (NULL);
-	_putchar(new);
-	free(t);
+
+	for (i = 0; str[i]; i++)
+		;
+	i++;
+
+	new = malloc(sizeof(*new) * i);
+	if (new == NULL)
+		return (NULL);
+
+	for (j = 0; j < i; j++)
+		new[j] = str[j];
+	return (new);
 }
