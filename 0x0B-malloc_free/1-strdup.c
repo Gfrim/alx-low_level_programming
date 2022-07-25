@@ -11,10 +11,14 @@
 
 char *_strdup(char *str)
 {
-	char new[] = str;
-	char *a = &new;
+	char *new;
+	int i;
+
+	new = malloc(sizeof(*new));
+	for (i = 0; i < sizeof(*str); i++)
+		new[i] = str[i];
 
 	if (str == NULL)
 		return (NULL);
-	return (a);
+	return (new);
 }
