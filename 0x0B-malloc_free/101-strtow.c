@@ -10,7 +10,7 @@
 
 int wordcounter(char *str)
 {
-	int i, words, len = 0, 0, 0;
+	int i = 0, words = 0, len = 0;
 
 	for (i = 0; *(str + i); i++)
 		len++;
@@ -20,7 +20,7 @@ int wordcounter(char *str)
 		if (*(str + i) != ' ')
 		{
 			words++;
-			i += word_len(str + i)
+			i += word_len(str + i);
 		}
 	}
 	return (words);
