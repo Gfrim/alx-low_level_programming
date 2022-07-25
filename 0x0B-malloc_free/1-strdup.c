@@ -20,5 +20,6 @@ char *_strdup(char *str)
 	
 	if (str == NULL || new == NULL)
 		return (NULL);
-	return (new);
+	_putchar(new);
+	free(t);
 }
