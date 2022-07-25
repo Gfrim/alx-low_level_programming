@@ -2,6 +2,27 @@
 #include <stdlib.h>
 
 /**
+ * word_len - Finds the index that marks the end of the
+ * first word in the string
+ * @str: string
+ *
+ * Return: index
+ */
+
+int word_len(char *str)
+{
+	int i = 0, len = 0;
+
+	while (*(str + i) && *(str + i) != ' ')
+	{
+		len++;
+		i++;
+	}
+	return (len);
+}
+
+
+/**
  * wordcounter - count words present in the string
  * @str: string
  *
