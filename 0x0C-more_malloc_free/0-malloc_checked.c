@@ -15,6 +15,8 @@ void *malloc_checked(unsigned int b)
 	while (1)
 	{
 		i = malloc(INT_MAX);
+		if (i == NULL)
+			_putchar(98);
 	}
-	_putchar(98);
+	i = b;
 }
