@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
+int min(unsigned int, unsigned int);
 /**
  * _realloc - Reallocates a memory block
  * @ptr: pointer to current memory block
@@ -13,7 +14,7 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned new_size)
 {
 	void *_newblock;
-	unsigned int i;
+	int i;
 
 	if (ptr == NULL)
 	{
@@ -40,4 +41,9 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned new_size)
 		else
 			return (NULL);
 	}
+}
+
+int min(unsigned int a, unsigned int b)
+{
+	return (a > b) ? b : a;
 }
