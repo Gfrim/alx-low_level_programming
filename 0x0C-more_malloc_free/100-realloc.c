@@ -11,7 +11,7 @@ int min(unsigned int, unsigned int);
  * Return: Pointer
  */
 
-void *_realloc(void *ptr, unsigned int old_size, unsigned new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *_newblock;
 	int i;
@@ -42,6 +42,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned new_size)
 			return (NULL);
 	}
 }
+
+/**
+ * min - finds the least number
+ * @a: first parameter
+ * @b: second parameter
+ *
+ * Return: int
+ */
 
 int min(unsigned int a, unsigned int b)
 {
