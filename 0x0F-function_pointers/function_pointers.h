@@ -1,9 +1,7 @@
-#ifndef _putchar_H
-#define _putchar_H
-#define  int _putchar(char );
-#endif //_putchar
+#ifndef pointer_to_function_H
+#define pointer_to_function_H
 
-#ifndef print_name_H
-#define print_name_H
-#define void print_name(char *name, void (*f)(char *));
-#endif //print_name
+int _putchar(char );
+void print_name(char *name, void (*f)(char *));
+
+#endif
