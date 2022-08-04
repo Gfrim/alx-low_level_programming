@@ -15,51 +15,38 @@ void print_all(const char * const format, ...)
 	char *c;
 
 	va_start(ap, format);
-
 	while (format && format[i] != '\0')
 	{
 		switch (format[i])
 		{
 			case 'c':
 				switch (j)
-				{
-					case 1:
-						printf(", ");
-				}
+				{case 1:printf(", ");}
 				j = 1;
 				printf("%c", va_arg(ap, int));
 				break;
 			case 'i':
 				switch (j)
-				{
-					case 1:
-						printf(", ");
-				}
+				{case 1:printf(", ");}
 				j = 1;
 				printf("%i", va_arg(ap, int));
 				break;
 			case 'f':
 				switch (j)
-				{
-					case 1:
-						printf(", ");
+				{case 1:printf(", ");
 				}
 				j = 1;
 				printf("%f", va_arg(ap, double));
 				break;
 			case 's':
 				switch (j)
-				{
-					case 1:
-						printf(", ");
+				{case 1:printf(", ");
 				}
 				j = 1;
 				c = va_arg(ap, char *);
 				if (c)
-				{
-					printf("%s", c);
-					break;
-				}
+				{printf("%s", c);
+				break;}
 				printf("%p", c);
 				break;
 		}
