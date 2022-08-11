@@ -7,7 +7,8 @@
 
 void __attribute__ ((constructor)) first()
 {
-printf(
-"You're the beat! and yet, you must allow,\n I bore my house upon my back!\n"
-);
+char *s1, *s2;
+s1 = "You're the best! and yet, you must allow,\n";
+s2 = "I bore my house upon my back!\n";
+printf("%s%s", s1, s2);
 }
