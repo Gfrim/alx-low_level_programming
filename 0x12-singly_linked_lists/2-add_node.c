@@ -11,7 +11,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *ptr = malloc(sizeof(struct list_s));
+	list_t *ptr = malloc(sizeof(list_t));
 	size_t count;
 
 	if (ptr == NULL)
