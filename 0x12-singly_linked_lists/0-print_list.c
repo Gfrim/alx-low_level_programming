@@ -10,20 +10,14 @@
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	const list_t *ptr = NULL;
 
-	if (h == NULL)
-		printf("List is empty\n");
-
-	ptr = h;
-
-	while (ptr != NULL)
+	while (h != NULL)
 	{
-		if (ptr->str == NULL)
+		if (h->str == NULL)
 			printf("[%d] (nil)\n", 0);
 		else
-			printf("[%d] %s\n", ptr->len, ptr->str);
-		ptr = ptr->next;
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
 		count++;
 	}
 	return (count);
