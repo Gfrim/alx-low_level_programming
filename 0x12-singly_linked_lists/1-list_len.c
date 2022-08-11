@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * list_len - Returns number of elements
@@ -13,12 +13,12 @@ size_t list_len(const list_t *h)
 
 	const list_t *ptr = NULL;
 
-	ptr = head;
+	ptr = h;
 
 	while (ptr != NULL)
 	{
 		count++;
 		ptr = ptr->next;
 	}
-	return (c);
+	return (count);
 }
