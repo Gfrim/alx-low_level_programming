@@ -3,7 +3,7 @@
 void __attribute__((constructor)) premain(void);
 
 /**
- * first - function that gets executed before main
+ * premain - function that gets executed before main
  * Return: None
  */
 
