@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) premain(void);
+__attribute__((constructor))
 
 /**
  * premain - function that gets executed before main
