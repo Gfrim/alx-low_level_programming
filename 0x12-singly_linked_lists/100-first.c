@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * first - function that gets executed before main
