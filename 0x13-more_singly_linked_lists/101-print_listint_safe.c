@@ -54,6 +54,7 @@ size_t print_listint_safe(const listint_t *head)
 			if (head == old->p)
 			{
 				printf("-> [%p] %d\n", (void *)head, head->n);
+				free_listp(&headptr);
 				return (count);
 			}
 		}
@@ -61,6 +62,6 @@ size_t print_listint_safe(const listint_t *head)
 		head = head->next;
 		count++;
 	}
-
+	free_listp(&headptr);
 	return (count);
 }
