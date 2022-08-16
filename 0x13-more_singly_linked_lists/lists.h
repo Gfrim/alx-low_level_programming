@@ -19,6 +19,21 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/**
+ * struct listpoint_s - singly linked list
+ * @p: pointer of nodes
+ * @next: pointer to the next node
+ *
+ * Description: Linked list of pointers
+ *
+ */
+
+typedef struct listpoint_s
+{
+	void *p;
+	struct listpoint_s *next;
+} listpoint_t;
+
 
 size_t free_listint_safe(listint_t **h);
 size_t print_listint(const listint_t *h);
