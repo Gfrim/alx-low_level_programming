@@ -18,7 +18,7 @@ void free_listp(listpoint_t **head)
 		curr_node = *head;
 		while ((new = curr_node) != NULL)
 		{
-			curr_node - curr_node->next;
+			curr_node = curr_node->next;
 			free(new);
 		}
 		*head = NULL;
