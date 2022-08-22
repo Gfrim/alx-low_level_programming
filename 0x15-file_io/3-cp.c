@@ -52,7 +52,7 @@ void close_file(int fd)
  * Return: 0 (ON Success)
  */
 
-int main(void)
+int main(int argc, char *argv[])
 {
 	int from, to, r, w;
 	char *buf;
