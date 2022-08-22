@@ -84,10 +84,10 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 		r = read(from, buf, 1024);
-		to = open(argv[2], OWRONLY | O_APPEND);
+		to = open(argv[2], O_WRONLY | O_APPEND);
 	} while (r > 0);
 	free(buf);
-	close(from);
-	close(to);
+	close_file(from);
+	close_file(to);
 	return (0);
 }
